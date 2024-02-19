@@ -12,10 +12,13 @@ import com.example.myapplication.data.Post
 import com.example.myapplication.databinding.FragmentFirstBinding
 import com.example.myapplication.databinding.FragmentPostBinding
 import com.example.myapplication.repository.UserRepository
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class PostFragment: Fragment(){
     private var _binding: FragmentPostBinding? = null
     private val binding get() = _binding!!
+    private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -30,9 +33,20 @@ class PostFragment: Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val currentUser: FirebaseUser? = auth.currentUser
+        val userId: String? = currentUser?.uid
+
         val args: PostFragmentArgs by navArgs()
         val post: Post = args.selectedPost
 
+        if (post.userId == userId){
+
+            binding.dolacz.visibility = View.GONE
+            binding.priv.visibility = View.GONE
+        }else{
+            binding.edytuj.visibility = View.GONE
+
+        }
         binding.tytul.text = post.title
         binding.contentt.text = post.content
         binding.kategoria1.text = post.kategorie?.get(0)
