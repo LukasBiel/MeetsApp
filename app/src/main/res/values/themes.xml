@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
+
+    <style name="NoHighlightBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Ustawienie przezroczystego tła -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- Ustawienie przezroczystego koloru tła dla stanu wciśniętego -->
+        <item name="android:theme">@style/ThemeOverlay.NoHighlightBottomNavigationView</item>
+    </style>
+
+    <!-- Niestandardowy styl, który usuwa podświetlenie przycisków -->
+    <style name="ThemeOverlay.NoHighlightBottomNavigationView" parent="">
+        <item name="colorControlHighlight">@android:color/transparent</item>
+    </style>
+
+</resources>

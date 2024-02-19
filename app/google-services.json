@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "95597958133",
+    "firebase_url": "https://meets-ab1ca-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "meets-ab1ca",
+    "storage_bucket": "meets-ab1ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95597958133:android:00bfea72cea9b887ed46bc",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJgH9h6VAcCwjIIzKjVHZJcQTEKlVBu9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/zeroFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.ui.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_zeroFragment"
+            app:destination="@id/zeroFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_postFragment"
+            app:destination="@id/postFragment">
+            <argument
+                android:name="selectedPost"
+                app:argType="com.example.myapplication.data.Post"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myapplication.ui.SecondFragment"
+        android:label="Dodaj post"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/zeroFragment"
+        android:name="com.example.myapplication.ui.ZeroFragment"
+        android:label="Zaloguj"
+        tools:layout="@layout/fragment_zero">
+        <action
+            android:id="@+id/action_zeroFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_zeroFragment_to_registerationFragment"
+            app:destination="@id/registerationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerationFragment"
+        android:name="com.example.myapplication.ui.RegisterationFragment"
+        android:label="Zarejestruj się">
+        <action
+            android:id="@+id/action_registerationFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_registerationFragment_to_zeroFragment"
+            app:destination="@id/zeroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.myapplication.ui.PostFragment"
+        android:label="PostFragment" >
+        <argument
+            android:name="selectedPost"
+            app:argType="com.example.myapplication.data.Post" />
+        <action
+            android:id="@+id/action_postFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

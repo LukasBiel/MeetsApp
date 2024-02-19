@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="bold_text"><b>Dane osobowe</b></string>
+    <string name="bold_text2"><b>Dane logowania</b></string>
+    <string name="email">Email</string>
+    <string name="hasło">Hasło</string>
+    <string name="wyloguj">Wyloguj</string>
+    <string name="ustawienia">Ustawienia</string>
+    <string name="Usuń_konto">Usuń konto</string>
+    <string name="ssss">Logowanie</string>
+    <string name="dzie">Dzień</string>
+    <string name="data_urodzenia"><![CDATA[<b>Data urodzenia</b>]]></string>
+    <string name="text_kategorie">Dodaj kategorie (max 3), które najdokładniej scharakteryzują twoje spotkanie. Jak dodać kategorię</string>
+    <string name="text_short_content">Wpisz krótki opis (maksymalnie 100 znaków), który zwięźle opisze aktywność i zachęci do dołączenia. Będzie on widoczny na głównej karcie posta</string>
+    <string name="opis">Dokładnie opisz spotkanie (200 – 1000 znaków). Pamiętaj, żeby zawrzeć wszystkie kluczowe informacje, warunki uczestnictwa (jeżeli takie są), potencjalne koszty. Czego unikać w opisie spotkania?</string>
+    <string name="lokalizacja_text">Dodaj miasto leżące najbliżej planowanego miejsca spotkania</string>
+</resources>

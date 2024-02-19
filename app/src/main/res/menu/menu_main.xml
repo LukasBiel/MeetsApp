@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.myapplication.ui.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/ustawienia"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Wyloguj"
+        android:orderInCategory="100"
+        android:title="@string/wyloguj"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Usuń"
+        android:orderInCategory="100"
+        android:title="@string/Usuń_konto"
+        app:showAsAction="never" />
+</menu>
